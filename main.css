@@ -48,20 +48,28 @@ div {
 
 .nav1>li {
     display: inline-block;
-    border: 1px solid green;
-    font-family: 微軟正黑體;
+    border: 1px solid #ddd;
+    border-right: 0;
+    padding: .5em 1em;
+    font-family: 新細明體;
     position: relative;
-    width: 33.33%;
+    width: 25%;
     margin-left: -5px;
-    background: gold;    
-}
+    background: lightgrey;
+    box-sizing: border-box;
+    }
+
+.nav1>li:last-child{border-right: 1px solid #ddd}
 
 li {
     cursor: pointer;
+    font-family: 標楷體;
 }
 
 .submenu {
     background: #eee;
+    border: 1px solid #ddd;
+    border-radius: 15px;
     position: absolute;
     left: -1px;
     top: 100%;
@@ -72,6 +80,8 @@ li {
 
 .submenu li {
     list-style: none;
+    padding: .5em 15px;
+    color: black;
 }
 
 .nav1>li:hover .submenu {
@@ -80,5 +90,5 @@ li {
 
 .submenu>li:hover {
     background: lightblue;
-    color: red;
+    color: blue;
 }
